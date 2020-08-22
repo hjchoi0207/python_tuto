@@ -1,0 +1,13 @@
+#def함수
+def add_num(a,b): return a+b
+
+#람다식
+add = lambda a,b: a+b
+
+#이름 없이 0번 함수 1번함수
+myList = [lambda a,b: a+b, lambda a,b: a*b]
+
+
+v = myList[0]          #<function <lambda> at 0x7f6e97770940>
+v = myList[0]('1','2') #12
+v = myList[0](1,2)     #3
